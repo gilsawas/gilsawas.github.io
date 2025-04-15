@@ -117,8 +117,7 @@ footer {
   transform: scale(1.02);
   box-shadow: 0 0 50px rgba(231, 196, 112, 0.6);
 }
-.glow-effect {
-  animation: pseudo-scintillement 6s infinite;
+
 }
 @keyframes pseudo-scintillement {
   0%, 100% { opacity: 1; filter: drop-shadow(0 0 10px #E7C470); }

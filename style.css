@@ -90,7 +90,7 @@ nav a:hover {
 /* --- Animation Scintillement --- */
 .scintillement {
   animation: pseudo-scintillement 2.5s infinite;
-}
+
 @keyframes pseudo-scintillement {
   0%, 100% { opacity: 1; filter: drop-shadow(0 0 10px #E7C470); }
   50% { opacity: 0.95; filter: drop-shadow(0 0 25px #8B0000); }

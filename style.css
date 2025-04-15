@@ -105,4 +105,21 @@ footer {
   0% { box-shadow: 0 0 20px #fff; }
   100% { box-shadow: 0 0 10px rgba(231, 196, 112, 0.6); }
 }
+/* --- Effet halo sur l'image --- */
+.glow-effect {
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(231, 196, 112, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 80%;
+  margin: 2rem auto;
+}
+.glow-effect:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 50px rgba(231, 196, 112, 0.6);
+}
 
+/* --- Footer stylisé --- */
+.footer-highlight {
+  color: #fff;
+  text-shadow: 0 0 5px #E7C470;
+}

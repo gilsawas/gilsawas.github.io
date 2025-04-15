@@ -134,4 +134,47 @@ footer {
 .footer-highlight {
   color: #fff;
   text-shadow: 0 0 5px #E7C470;
-}
+}/* --- Responsive pour mobile --- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .portrait-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .glow-effect {
+    max-width: 95%;
+  }
+
+

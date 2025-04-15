@@ -34,6 +34,32 @@
     <p>Chaque image ici est née d’un dialogue entre l’intuition humaine et la puissance algorithmique.</p>
     <a href="#galerie" class="cta-button">Explorer la Galerie</a>
   </main>
+.portrait-wrapper {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.portrait-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portrait-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
+}
+
+.portrait-legend {
+  margin-top: 10px;
+  font-style: italic;
+  color: #FFD700;
+  font-size: 0.95em;
+}
 
   <footer>
     © 2025 SAWAS AI ART · <span class="footer-highlight">sawas-ai.art</span>

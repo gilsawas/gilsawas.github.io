@@ -76,4 +76,33 @@ footer {
   0% { box-shadow: 0 0 20px #fff; }
   100% { box-shadow: 0 0 10px rgba(231, 196, 112, 0.6); }
 }
+.cta-button {
+  display: inline-block;
+  background-color: #E7C470;
+  color: #000000;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(231, 196, 112, 0.6);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.cta-button:hover {
+  background-color: #000000;
+  color: #E7C470;
+  box-shadow: 0 0 15px rgba(231, 196, 112, 1);
+}
+
+.cta-button:active {
+  animation: flash 0.2s ease-in-out;
+}
+
+@keyframes flash {
+  0% { box-shadow: 0 0 20px #fff; }
+  100% { box-shadow: 0 0 10px rgba(231, 196, 112, 0.6); }
+}
 

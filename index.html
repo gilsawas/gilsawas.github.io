@@ -4,99 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sawas AI Art</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #000;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #E7C470;
-    }
-    header {
-      background-color: #8B0000;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-      color: #E7C470;
-    }
-    nav a {
-      color: #E7C470;
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #fff;
-    }
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 5rem 2rem;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-    }
-    .btn {
-      margin-top: 2rem;
-      padding: 1rem 2rem;
-      background-color: #E7C470;
-      color: #000;
-      text-transform: uppercase;
-      font-weight: bold;
-      border: none;
-      border-radius: 6px;
-      box-shadow: 0 0 10px rgba(231, 196, 112, 0.5);
-      transition: background-color 0.3s, color 0.3s;
-    }
-    .btn:hover {
-      background-color: #000;
-      color: #E7C470;
-    }
-    footer {
-      background-color: #8B0000;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #E7C470;
-      margin-top: 4rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>SAWAS · AI · ART</h1>
     <nav>
-      <a href="#">Galerie</a>
-      <a href="#">Forum</a>
-      <a href="#">Contact</a>
-   <div style="text-align: center; margin-top: 30px;">
-  <a href="#galerie" class="cta-button">Voir mes créations</a>
-</div>
- </nav>
+      <a href="#galerie">Galerie</a>
+      <a href="#forum">Forum</a>
+      <a href="#contact">Contact</a>
+      <a href="#creations" class="cta-button">Voir mes créations</a>
+    </nav>
   </header>
-  <main class="hero">
-    <h2>Bienvenue dans l'univers visuel de l’âme augmentée</h2>
-    <div style="text-align: center; margin-top: 30px;">
-  <a href="#galerie" class="cta-button">Voir mes créations</a>
-</div>
 
-    <p>Chaque image ici est née d’un dialogue entre l’intuition humaine et la puissance de l’Intelligence Artificielle. Un art futuriste enraciné dans l’émotion, la beauté et la vision.</p>
-    <button class="btn">Explorer la Galerie</button>
+  <main class="hero">
+    <!-- IMAGE FIXE (à remplacer par ton fichier) -->
+    <div class="artwork">
+      <img src="ton-image.jpg" alt="Œuvre Sawas" class="glow-effect">
+    </div>
+
+    <h2>Bienvenue dans l'univers visuel de l’âme augmentée</h2>
+    <p>Chaque image ici est née d’un dialogue entre l’intuition humaine et la puissance algorithmique.</p>
+    <a href="#galerie" class="cta-button">Explorer la Galerie</a>
   </main>
+
   <footer>
-    © 2025 SAWAS AI ART · Site conçu dans la lumière et la douleur · sawas-ai.art
+    © 2025 SAWAS AI ART · <span class="footer-highlight">sawas-ai.art</span>
   </footer>
 </body>
 </html>

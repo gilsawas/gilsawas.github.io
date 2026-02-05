@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+    </script>
     <title>Message φ · SAWAS</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Style menu header -->
+    <link rel="stylesheet" href="style-bifurcation.css">
 
     <style>
         * {
@@ -26,6 +34,7 @@
             font-family: 'Playfair Display', Georgia, serif;
             color: #d4af37;
             padding: 40px 20px;
+            padding-top: calc(40px + 80px);
             overflow: hidden;
         }
 
@@ -177,6 +186,30 @@
             <span>sawas-ai.art · 2026</span>
         </div>
     </div>
+
+    <!-- ========================================
+         HEADER / MENU NAVIGATION
+         ======================================== -->
+    <header class="site-header" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+        <div class="header-content">
+            <a href="index.html" class="site-logo">
+                <img src="images/sawas-ai-logo-gold.png" alt="Sawas-ai.art" class="logo-image">
+            </a>
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="gallery.html" class="nav-link">Art</a>
+                <a href="luz.html" class="nav-link">LUZ</a>
+                <a href="videos.html" class="nav-link">Videos</a>
+                <a href="about.html" class="nav-link">A propos</a>
+                <a href="mailto:gil@sawas-ai.art" class="nav-link">Contact</a>
+            </nav>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
     <a href="index.html" class="back-link">← Retour à l'accueil</a>
 </body>

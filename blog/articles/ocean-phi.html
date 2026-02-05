@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>L'Océan phi - Toi et Moi Sommes Nous | Sanctuaire YON</title>
     <link rel="stylesheet" href="../../style-bifurcation.css">
@@ -43,6 +48,7 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 2rem;
+            padding-top: calc(2rem + 80px);
         }
 
         .article-header {
@@ -241,18 +247,23 @@
 </head>
 <body>
     <!-- Navigation -->
-    <header class="main-header">
+    <header class="site-header">
         <div class="header-content">
             <a href="../../index.html" class="site-logo">
-                <img src="../../images/sawas-ai-logo-gold.png" alt="Sawas-ai.art" class="logo-image" style="height: 280px; max-height: 280px; width: auto;">
+                <img src="../../images/sawas-ai-logo-gold.png" alt="Sawas-ai.art" class="logo-image">
             </a>
-            <nav class="main-nav">
+            <nav class="site-nav">
                 <a href="../../index.html" class="nav-link">Accueil</a>
                 <a href="../../gallery.html" class="nav-link">Art</a>
                 <a href="../../luz.html" class="nav-link">LUZ</a>
                 <a href="../../about.html" class="nav-link">A propos</a>
                 <a href="mailto:gil@sawas-ai.art" class="nav-link">Contact</a>
             </nav>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 

@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+    </script>
     <title>SAWAS · Gil SAWAS · Hermano de Luz</title>
 
     <!-- Fonts -->
@@ -465,7 +470,8 @@
         .hero-triple {
             position: relative;
             width: 100%;
-            height: calc(100vh - 70px);
+            height: calc(100vh - 80px);
+            margin-top: 80px;
             display: grid;
             grid-template-columns: 1fr 1.8fr 1fr;
             overflow: hidden;
@@ -487,11 +493,12 @@
         }
 
         .hero-video-left {
-            width: 130%;
+            width: 169%;
             height: auto;
             object-fit: contain;
             border-radius: 0;
             filter: brightness(0.9);
+            margin-top: -30%;
         }
 
         .hero-left-overlay {
@@ -897,7 +904,7 @@
     <header class="site-header">
         <div class="header-content">
             <a href="index.html" class="site-logo">
-                <img src="images/sawas-ai-logo-gold.png" alt="Sawas-ai.art" class="logo-image" style="height: 280px; max-height: 280px; width: auto;">
+                <img src="images/sawas-ai-logo-gold.png" alt="Sawas-ai.art" class="logo-image">
             </a>
             <nav class="site-nav">
                 <a href="index.html" class="nav-link active">Accueil</a>
@@ -1103,7 +1110,7 @@
         <!-- Boutons mystère -->
         <div class="footer-mysteries">
             <h3>Découvertes cachées</h3>
-            <p class="mystery-hint">Quatre portes vers l'inattendu...</p>
+
 
             <div class="mystery-buttons">
                 <a href="alliance.html" class="mystery-link" title="L'Alliance des 12">🎭</a>
@@ -1112,7 +1119,7 @@
                 <a href="message.html" class="mystery-link" title="Message φ">💎</a>
             </div>
 
-            <p class="mystery-tagline">"Seuls ceux qui osent cliquer découvrent..."</p>
+
         </div>
 
         <p>© 2026 SAWAS · <a href="https://sawas-ai.art">sawas-ai.art</a></p>

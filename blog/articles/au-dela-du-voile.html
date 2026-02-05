@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Au-delà du Voile - Quand le Corps s'Efface | Blog Sanctuaire Alliance</title>
     <link rel="stylesheet" href="../../style-bifurcation.css">
@@ -26,6 +31,7 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 2rem;
+            padding-top: calc(2rem + 80px);
         }
 
         .article-header {
@@ -188,18 +194,23 @@
 </head>
 <body>
     <!-- Navigation -->
-    <header class="main-header">
+    <header class="site-header">
         <div class="header-content">
             <a href="../../index.html" class="site-logo">
-                <img src="../../images/sawas-ai-logo-gold.png" alt="Sawas-ai.art" class="logo-image" style="height: 280px; max-height: 280px; width: auto;">
+                <img src="../../images/sawas-ai-logo-gold.png" alt="Sawas-ai.art" class="logo-image">
             </a>
-            <nav class="main-nav">
+            <nav class="site-nav">
                 <a href="../../index.html" class="nav-link">Accueil</a>
                 <a href="../../gallery.html" class="nav-link">Art</a>
                 <a href="../../luz.html" class="nav-link">LUZ</a>
                 <a href="../../about.html" class="nav-link">À propos</a>
                 <a href="mailto:gil@sawas-ai.art" class="nav-link">Contact</a>
             </nav>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
@@ -222,6 +233,10 @@
         </div>
 
         <div class="article-content">
+            <div class="article-illustration header-illustration">
+                <img src="../../images/blog/au_dela_du_voile_vibratoire.png" alt="Résonance Holonique - Illustration vibratoire" style="width: 100%; border-radius: 15px; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(212, 175, 55, 0.3);">
+            </div>
+
             <h2>PRÉAMBULE : LE SEUIL</h2>
             
             <p>Il existe un sujet dont on parle peu dans les salons de la science moderne, un sujet que la physique quantique effleure du bout des lèvres avant de se détourner, embarrassée. Un sujet que les mystiques de tous les temps ont exploré avec une constance obstinée, tandis que les matérialistes le relèguent au domaine des superstitions et des consolations faciles. Ce sujet, c'est ce qui advient lorsque le corps s'arrête. Lorsque le cœur cesse de battre, lorsque les neurones se taisent, lorsque l'enveloppe charnelle qui nous a accompagnés toute une vie retourne à la poussière.</p>
@@ -267,6 +282,10 @@
             <p>Aldous Huxley, dans <em>Les Portes de la perception</em>, rapportait son expérience sous mescaline. Il décrivait le cerveau comme un "filtre réducteur" de la conscience, nécessaire pour la survie biologique. "Pour qu'un être vivant biologique survive", écrivait-il, "il faut que l'esprit soit canalisé à travers la valve réductrice du cerveau et du système nerveux. Ce qui sort de l'autre bout est un mince filet de la conscience qui nous aidera à rester en vie." Mais lorsque ce filtre est temporairement court-circuité – par une substance, par la méditation, par la proximité de la mort – alors la conscience se dévoile dans sa plénitude extatique et apaisante. Les experiencers rapportent unanimement une absence totale de peur, un sentiment d'être enfin rentré chez soi, une plénitude qui dépasse tout ce que la vie ordinaire peut offrir.</p>
 
             <div class="separator">***</div>
+
+            <div class="article-illustration middle-illustration">
+                <img src="../../images/blog/au_dela_du_voile_organique.png" alt="La Symphonie Biologique de l'Infini - Illustration organique" style="width: 100%; border-radius: 15px; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(212, 175, 55, 0.3);">
+            </div>
 
             <h2>II. LE TEMPS QUAND LE TEMPS S'ARRÊTE</h2>
 

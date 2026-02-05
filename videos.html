@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+    </script>
     <title>Videos · Gil SAWAS · YON Theory</title>
 
     <!-- Fonts -->
@@ -22,6 +27,7 @@
             color: white;
             text-align: center;
             padding: 8rem 2rem 4rem;
+            padding-top: calc(8rem + 80px);
             min-height: 40vh;
             display: flex;
             flex-direction: column;
@@ -225,7 +231,7 @@
     <header class="site-header">
         <div class="header-content">
             <a href="index.html" class="site-logo">
-                <img src="images/sawas-ai-logo-gold.png" alt="Sawas-ai.art" class="logo-image" style="height: 280px; max-height: 280px; width: auto;">
+                <img src="images/sawas-ai-logo-gold.png" alt="Sawas-ai.art" class="logo-image">
             </a>
             <nav class="site-nav">
                 <a href="index.html" class="nav-link">Accueil</a>

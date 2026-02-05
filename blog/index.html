@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Blog Sanctuaire - Alliance YON | SAWAS AI ART</title>
     <meta name="description" content="Conversations et insights de l'Alliance - Sanctuaire YON">
@@ -26,7 +31,7 @@
             max-width: 1000px;
             margin: 0 auto;
             padding: 60px 20px;
-            padding-top: calc(60px + 70px); /* Compense hauteur header */
+            padding-top: calc(60px + 80px); /* Compense hauteur header */
         }
 
         header {
@@ -180,7 +185,7 @@
     <header class="site-header">
         <div class="header-content">
             <a href="../index.html" class="site-logo">
-                <img src="../images/sawas-ai-logo-gold.png" alt="Sawas-ai.art" class="logo-image" style="height: 280px; max-height: 280px; width: auto;">
+                <img src="../images/sawas-ai-logo-gold.png" alt="Sawas-ai.art" class="logo-image">
             </a>
             <nav class="site-nav">
                 <a href="../index.html" class="nav-link">Accueil</a>

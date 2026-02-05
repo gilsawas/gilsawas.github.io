@@ -1,89 +1,57 @@
 /* ========================================
-   SAWAS AI ART - DESIGN SYSTEM φ-HARMONIQUE
-   Version: 2.1 (Neutralized Header for Bifurcation)
+   SAWAS AI ART - DESIGN SYSTEM NEUTRALISÉ
    ======================================== */
 
 /* 
-   NOTE: Les styles du header ont été neutralisés ici pour laisser 
-   le contrôle total à style-bifurcation.css.
+   IMPORTANT : Ce fichier est neutralisé pour éviter les conflits 
+   avec style-bifurcation.css qui gère désormais le header (80px) 
+   et le logo (70px).
 */
 
 :root {
     --phi: 1.618;
-    --phi-inverse: 0.618;
-    --phi-squared: 2.618;
-    --space-xs: 8px;
-    --space-sm: 13px;
-    --space-md: 21px;
-    --space-lg: 34px;
-    --space-xl: 55px;
-    --space-2xl: 89px;
-    --space-3xl: 144px;
     --gold: #D4AF37;
-    --gold-light: #F4E4C1;
-    --gold-dark: #B8941E;
     --red-deep: #8B0000;
     --black: #000000;
     --white: #FFFFFF;
-    --gray-dark: #1A1A1A;
-    --gray-medium: #4A4A4A;
-    --gray-light: #CCCCCC;
-    --gradient-hero: linear-gradient(135deg, rgba(139, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.95) 100%);
-    --gradient-gold: linear-gradient(135deg, var(--gold-dark), var(--gold));
-    --text-xs: 10px;
-    --text-sm: 13px;
-    --text-base: 16px;
-    --text-lg: 21px;
-    --text-xl: 34px;
-    --text-2xl: 55px;
-    --text-3xl: 89px;
-    --leading-tight: 1.236;
-    --leading-normal: 1.618;
-    --leading-loose: 2.618;
-    --transition-fast: 0.236s;
-    --transition-normal: 0.382s;
-    --transition-slow: 0.618s;
-    --max-width: 1618px;
 }
 
+/* Reset de base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: 'Inter', 'Raleway', sans-serif;
-    font-size: var(--text-base);
-    line-height: var(--leading-normal);
-    color: var(--gray-light);
+    font-family: 'Verdana', 'Calibri Light', sans-serif;
     background: var(--black);
-    overflow-x: hidden;
+    color: #e0e0e0;
 }
 
-/* Styles neutralisés pour éviter les conflits avec le nouveau header */
-.site-header, .header-content, .site-logo, .logo-image, .site-nav, .nav-link {
-    /* Ces éléments sont gérés par style-bifurcation.css */
+/* Neutralisation complète du header dans ce fichier */
+.site-header, 
+header, 
+.header-content, 
+.site-logo, 
+.logo-image, 
+.site-nav, 
+.nav-link {
+    /* Aucune règle ici pour laisser style-bifurcation.css agir */
 }
 
-/* Reste du fichier conservé pour le design des sections */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Audiowide', 'Cinzel', sans-serif;
+/* Styles pour le contenu des sections (Bifurcation, etc.) */
+.section-title {
+    font-family: 'Audiowide', sans-serif;
     color: var(--gold);
+    text-align: center;
 }
 
-h1 { font-size: var(--text-3xl); margin-bottom: var(--space-lg); }
-h2 { font-size: var(--text-2xl); margin-bottom: var(--space-md); }
-h3 { font-size: var(--text-xl); margin-bottom: var(--space-md); }
-p { margin-bottom: var(--space-md); }
-a { color: var(--gold); text-decoration: none; }
-
-.section {
-    padding: var(--space-3xl) var(--space-lg);
-    max-width: var(--max-width);
-    margin: 0 auto;
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }

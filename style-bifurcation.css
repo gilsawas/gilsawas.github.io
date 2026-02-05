@@ -37,7 +37,7 @@ body {
    HEADER / MENU NAVIGATION (HOMOGÉNÉISÉ)
    ============================================ */
 
-/* Header ajusté pour le logo 130px */
+/* Header ajusté pour le logo 180px */
 header,
 .header,
 .site-header {
@@ -45,9 +45,9 @@ header,
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
-    height: 100px !important; /* Hauteur fixe pour le header */
-    min-height: 100px !important;
-    max-height: 100px !important;
+    height: 140px !important; /* Hauteur fixe pour le header */
+    min-height: 140px !important;
+    max-height: 140px !important;
     padding: 0 40px !important;
     background: linear-gradient(135deg, #b22222, #8b0000) !important;
     z-index: 9999 !important;
@@ -67,13 +67,13 @@ header,
     height: 100% !important;
 }
 
-/* Logo AGRANDI : 130px */
+/* Logo AGRANDI : 180px */
 .site-logo,
 .logo,
 header .logo {
     display: flex !important;
     align-items: center !important;
-    height: 130px !important;
+    height: 180px !important;
     padding: 5px 0 !important;
     flex-shrink: 0 !important;
     margin-top: 0 !important; /* Réinitialiser le margin-top */
@@ -83,9 +83,9 @@ header .logo {
 .logo-image,
 header .logo img,
 .site-logo img {
-    height: 130px !important;
-    min-height: 130px !important;
-    max-height: 130px !important;
+    height: 180px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
     width: auto !important;
     object-fit: contain !important;
     transition: transform 0.3s ease !important;
